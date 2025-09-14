@@ -59,6 +59,12 @@ The application is built on a two-part system: data ingestion and the agentic AP
 
 3. **Install dependencies:**
 
+   Directly run this command
+   ```bash
+   pip install -r requirements.txt
+   ```
+   or
+   
    Create a `requirements.txt` file with the following content:
    ```
    fastapi
@@ -77,14 +83,14 @@ The application is built on a two-part system: data ingestion and the agentic AP
    pip install -r requirements.txt
    ```
 
-4. **Set up your Google API Key:**
+5. **Set up your Google API Key:**
 
    Create a `.env` file in the root of the project and add your Google API key:
    ```
    GOOGLE_API_KEY="your-google-api-key"
    ```
 
-5. **Run the data ingestion script:**
+6. **Run the data ingestion script:**
 
    This will process your PDF file and create the ChromaDB vector store. You must provide the file path using the `--file` flag.
    ```bash
@@ -109,7 +115,7 @@ The application is built on a two-part system: data ingestion and the agentic AP
    **Example Request:**
    ```json
    {
-     "question": "What are the main causes and symptoms of Addison's disease?"
+     "question": "Explain me the difference between Derivative and Integration!"
    }
    ```
 
